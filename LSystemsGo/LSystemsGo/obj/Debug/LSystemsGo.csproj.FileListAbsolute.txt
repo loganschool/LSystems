@@ -1,0 +1,9 @@
+N:\a\!ProgCompClub\Logan Solutions\LSystems\LSystemsGo\LSystemsGo\bin\Debug\LSystemsGo.exe.config
+N:\a\!ProgCompClub\Logan Solutions\LSystems\LSystemsGo\LSystemsGo\bin\Debug\LSystemsGo.exe
+N:\a\!ProgCompClub\Logan Solutions\LSystems\LSystemsGo\LSystemsGo\bin\Debug\LSystemsGo.pdb
+N:\a\!ProgCompClub\Logan Solutions\LSystems\LSystemsGo\LSystemsGo\obj\Debug\LSystemsGo.csprojResolveAssemblyReference.cache
+N:\a\!ProgCompClub\Logan Solutions\LSystems\LSystemsGo\LSystemsGo\obj\Debug\LSystemsGo.Form1.resources
+N:\a\!ProgCompClub\Logan Solutions\LSystems\LSystemsGo\LSystemsGo\obj\Debug\LSystemsGo.Properties.Resources.resources
+N:\a\!ProgCompClub\Logan Solutions\LSystems\LSystemsGo\LSystemsGo\obj\Debug\LSystemsGo.csproj.GenerateResource.Cache
+N:\a\!ProgCompClub\Logan Solutions\LSystems\LSystemsGo\LSystemsGo\obj\Debug\LSystemsGo.exe
+N:\a\!ProgCompClub\Logan Solutions\LSystems\LSystemsGo\LSystemsGo\obj\Debug\LSystemsGo.pdb
