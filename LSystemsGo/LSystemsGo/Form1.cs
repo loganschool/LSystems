@@ -1,4 +1,6 @@
-﻿using System;
+﻿// L-Systems Go by Logan
+
+using System;
 using System.Collections.Generic;
 using System.Collections;
 using System.ComponentModel;
@@ -27,9 +29,12 @@ namespace LSystemsGo
         {
             tbxOutput.Clear();
         }
+
+
         Hashtable rules;
         Hashtable[] hashLevels;
 
+        /*
         void PopulateHashtables(int depth)
         {
             hashLevels = new Hashtable[depth];
@@ -91,14 +96,62 @@ namespace LSystemsGo
 
             return sum;
         }
+        
+        */
+
+        ulong AxiomLength(string axiom, int depth)
+        {
+            //Hashtable memo = new Hashtable();
+
+            ulong sum = 0;
+            foreach (char c in axiom)
+            {
+                /*
+                if (memo.ContainsKey(c))
+                {
+                    sum += (ulong)memo[c];
+                }
+                else
+                {
+                    ulong length = characterLength(depth - 1, c);
+                    sum += length;
+                    memo.Add(c, length);
+                }*/
+                ulong length = characterLength(depth - 1, c);
+                sum += length;
+            }
+            return sum;
+        }
+
+        ulong characterLength(int depth, char c)
+        {
+            if (depth == 0)
+            {
+                return 1;
+            }
+
+
+
+            string replace = (string)rules[c];
+
+            ulong sum = 0;
+
+            foreach (char current in replace)
+            {
+                ulong length = characterLength(depth - 1, current);
+                sum += length;             
+            }
+
+            return sum;
+        }
 
         private void btnSolve_Click(object sender, EventArgs e)
         {
-            string path = @"C:\Users\s299128\Desktop\DATA21.txt";
+            string path = @"C:\Users\e25227\Desktop\DATA20.txt";
             string[] data = System.IO.File.ReadAllLines(path);
 
             int counter = 0;
-            for (int Case = 0; Case < 10; Case++)
+            for (int Case = 0; Case < 2; Case++)
             {
 
                 string[] firstLine = data[counter].Split(' ');
